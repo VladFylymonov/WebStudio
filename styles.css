@@ -1,0 +1,377 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15;
+  padding-right: 15;
+}
+
+/* #############################header########################## */
+header {
+  /* height: 100px; */
+  border: 1px solid #ECECEC;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.header-logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 8px;
+  position: absolute;
+}
+
+.letter {
+  color: rgb(0, 115, 255);
+}
+
+.header-nav-container {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.header-nav-list {
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  gap: 50px;
+  color: black;
+  margin-left: 100px;
+}
+
+.header-nav-link {
+  color: black;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.header-nav-link[href="portfolio.html"]::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #2196F3;
+  width: 100%;
+  border-radius: 2px;
+  bottom: -31px;
+  right: 0px;
+}
+
+.header-nav-link:hover {
+  color: #2196F3;
+}
+
+.header-nav-contact-link:hover {
+  color: #2196F3;
+}
+
+.header-nav-contact-tel:hover {
+  color: #2196F3;
+}
+
+.header-nav-contact-tel:hover {
+  color: #2196F3;
+}
+
+.header-nav-contact {
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  margin-left: 230px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tel {
+  margin-top: 5px;
+  position: absolute;
+  margin-left: 25px;
+}
+
+.header-nav-contact-link {
+  color: #757575;
+  margin-top: -15px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link {
+  margin-top: 7px;
+  margin-left: -20px;
+}
+
+.header-nav-contact-tel {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 4px;
+  color: #757575;
+}
+
+.header-nav-contact .header-nav-contact-link:hover {
+  color: #2196F3;
+}
+
+/* ############################buttons-section########################### */
+.buttons-section {
+  height: 10px;
+}
+
+.main-section-button {
+  background-color: white;
+  color: black;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-section-button:hover {
+  background-color: #2196F3;
+  color: white;
+}
+
+.main-section-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 575px; */
+  /* left: 512px; */
+  gap: 8px;
+  height: 130px;
+}
+
+.main-section-buttons li button {
+  color: black;
+  background-color: #e0e0e0;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: 112px;
+  height: 38px;
+  border-radius: 4px;
+}
+
+.main-section-buttons li button:hover {
+  color: white;
+  background-color: #2196F3;
+}
+
+/* ############################main-section###################### */
+.main-section {
+  height: 1450px;
+  /* top: 174px;
+  left: 215px; */
+  /* border: 1px solid #EEEEEE; */
+  margin-top: 140px;
+}
+
+.main-section-item {
+  /* width: calc(33.33% - 10px); */
+  text-align: center;
+  align-items: center;
+  border: 1px solid #EEEEEE;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 30px;
+  /* padding: 20px; */
+  /* box-sizing: border-box; */
+}
+
+.box {
+  position: relative;
+  width: 370px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.box:hover .overlay {
+  transform: translatey(0);
+}
+
+.overlay p {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.54px;
+  /* width: 322px; */
+  text-align: center;
+  margin-top: 100px;
+}
+
+.main-section-item-title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.main-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-section-item img {
+  width: 370px;
+  height: 294px;
+}
+
+.main-section-item-title {
+  margin-top: 10px;
+}
+
+.main-section-item-category {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* ########################################footer-section######################## */
+.footer-section {
+  height: 252px;
+  flex-shrink: 0;
+  background: #2F303A;
+}
+
+.footer-logo {
+  font-family: Oleo Script;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-top: 60px;
+  position: absolute;
+}
+
+.footer-contact-list {
+  margin-top: 111px;
+  position: absolute;
+}
+
+.footer-contact .footer-contact-link:nth-child(2),
+.footer-contact-link:nth-child(3) {
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  background: #FFFFFF99;
+}
+
+.footer-contact-adress {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.footer-contact-mail {
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.60);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.footer-contact-link {
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.join-title {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-left: 516px;
+  margin-top: 72px;
+  position: absolute;
+}
+
+.join-list {
+  display: flex;
+  column-gap: 7px;
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 500px;
+}
+
+.join-item {
+  background-color: rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.join-item:hover {
+  background-color: rgba(33, 150, 243, 1);
+  border-radius: 50%;
+}
+
+.join-icon {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.join-item:hover .join-icon {
+  fill: rgba(255, 255, 255, 1);
+}
