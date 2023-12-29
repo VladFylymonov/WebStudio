@@ -49,6 +49,8 @@ p {
   padding: 0;
 }
 
+img {}
+
 img {
   display: block;
   width: 100%;
@@ -410,7 +412,7 @@ button[type=submit]:hover {
   justify-content: space-between;
   margin-bottom: 20px;
   -moz-column-gap: 18px;
-       column-gap: 18px;
+  column-gap: 18px;
 }
 
 .service-image {
@@ -436,7 +438,7 @@ button[type=submit]:hover {
   text-transform: uppercase;
 }
 
-.service-div > .label {
+.service-div>.label {
   display: flex;
   position: absolute;
   bottom: 0;
@@ -515,7 +517,7 @@ button[type=submit]:hover {
 .social-list {
   display: flex;
   -moz-column-gap: 7px;
-       column-gap: 7px;
+  column-gap: 7px;
   justify-content: center;
   margin-top: 20px;
 }
@@ -669,7 +671,7 @@ button[type=submit]:hover {
 .join-list {
   display: flex;
   -moz-column-gap: 7px;
-       column-gap: 7px;
+  column-gap: 7px;
   /* position: absolute; */
   /* margin-top: 110px; */
   margin-left: 295px;
@@ -720,4 +722,6 @@ button[type=submit]:hover {
   width: 358px;
   height: 50px;
   position: relative;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
